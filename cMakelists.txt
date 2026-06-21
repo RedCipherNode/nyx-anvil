@@ -23,7 +23,7 @@ set(
     OFF
 )
 
-add_executable(
-    nyx-anvil
+add_executable(nyx-anvil
     src/main.cpp
+    src/cli/cli.cpp
 )

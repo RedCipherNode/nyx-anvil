@@ -1,8 +1,6 @@
-#include <iostream>
+#include "cli/cli.h"
 
-int main()
+int main(int argc, char *argv[])
 {
-    std::cout << "Nyx Anvil Pre-Alpha\n";
-
-    return 0;
+    return RunCLI(argc, argv);
 }
