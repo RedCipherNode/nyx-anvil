@@ -1,18 +1,17 @@
 #include "cli.h"
 
-#include <iostream>
+#include "parser.h"
+#include "dispatcher.h"
 
-int RunCLI(int argc, char *argv[])
+void RunCLI(
+    int argc,
+    char *argv[])
 {
-    std::cout << "Nyx Anvil\n";
-    std::cout << "Pre-Alpha\n\n";
+    ParsedArguments arguments =
+        ParseArguments(
+            argc,
+            argv);
 
-    std::cout << "Usage:\n";
-    std::cout << "  nyx-anvil <command>\n\n";
-
-    std::cout << "Commands:\n";
-    std::cout << "  help\n";
-    std::cout << "  version\n";
-
-    return 0;
+    Dispatch(
+        arguments);
 }

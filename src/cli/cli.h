@@ -1,3 +1,5 @@
 #pragma once
 
-int RunCLI(int argc, char *argv[]);
+void RunCLI(
+    int argc,
+    char *argv[]);

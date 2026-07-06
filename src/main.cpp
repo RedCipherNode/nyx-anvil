@@ -1,6 +1,12 @@
 #include "cli/cli.h"
 
-int main(int argc, char *argv[])
+int main(
+    int argc,
+    char *argv[])
 {
-    return RunCLI(argc, argv);
+    RunCLI(
+        argc,
+        argv);
+
+    return 0;
 }
