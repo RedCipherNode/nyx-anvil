@@ -45,7 +45,14 @@ namespace nyx
 
         content_ = buffer.str();
 
+        model_.configVersion = 1;
+
         return true;
+    }
+
+    const ConfigurationModel &Configuration::model() const
+    {
+        return model_;
     }
 
     bool Configuration::save(const fs::path &root)
