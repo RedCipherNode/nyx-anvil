@@ -1,3 +1,15 @@
-version = 1
+config_version = 1
 
-Hello Nyx
+#
+# Enable protection by adding sections below.
+#
+# Example:
+#
+# [protection.obfuscation]
+#
+
+#
+# Project-wide security policies.
+#
+
+[policy]

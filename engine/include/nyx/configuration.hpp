@@ -10,6 +10,7 @@ namespace nyx
     {
     public:
         bool load(const std::filesystem::path &root);
+        bool save(const std::filesystem::path &root);
 
         const std::string &content() const;
 

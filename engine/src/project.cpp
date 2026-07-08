@@ -1,4 +1,4 @@
-#include <fstream>
+#include <filesystem>
 
 #include <nyx/constants.hpp>
 #include <nyx/project.hpp>
@@ -15,21 +15,7 @@ namespace nyx
 
     bool Project::create(const fs::path &root)
     {
-        if (exists(root))
-        {
-            return false;
-        }
-
-        std::ofstream file(root / ProjectFile);
-
-        if (!file)
-        {
-            return false;
-        }
-
-        file << "version = 1\n";
-
-        return true;
+        return !exists(root);
     }
 
 }
