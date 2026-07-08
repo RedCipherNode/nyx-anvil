@@ -11,6 +11,7 @@ namespace nyx
         bool initialize(const std::filesystem::path &projectRoot);
 
         bool createProject(const std::filesystem::path &projectRoot);
-    };
 
+        std::string loadConfiguration(const std::filesystem::path &projectRoot);
+    };
 }

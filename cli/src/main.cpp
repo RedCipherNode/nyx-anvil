@@ -50,15 +50,15 @@ int main(int argc, char *argv[])
 
         if (!engine.initialize(fs::current_path()))
         {
-            std::cerr << "nyx.toml not found.\n";
+            std::cerr << "Error: No Nyx project found.\n";
             return 1;
         }
 
-        std::cout << "Nyx project found.\n";
+        std::cout << "Nyx project found.\n\n";
+
+        std::cout << "Configuration:\n";
+        std::cout << engine.loadConfiguration(fs::current_path());
+
         return 0;
     }
-
-    std::cerr << "Unknown command: " << command << '\n';
-
-    return 1;
 }

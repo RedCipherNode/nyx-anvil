@@ -4,6 +4,7 @@ target_sources(nyx-engine
     PRIVATE
     src/engine.cpp
     src/project.cpp
+    src/configuration.cpp
 )
 
 target_include_directories(nyx-engine
@@ -15,3 +16,5 @@ target_compile_features(nyx-engine
     PUBLIC
     cxx_std_20
 )
+
+target_compile_options(nyx-engine PRIVATE /showIncludes)
