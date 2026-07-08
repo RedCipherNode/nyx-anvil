@@ -6,6 +6,7 @@ target_sources(nyx-engine
     src/project.cpp
     src/configuration.cpp
     src/protection.cpp
+    src/configuration_parser.cpp
 )
 
 target_include_directories(nyx-engine

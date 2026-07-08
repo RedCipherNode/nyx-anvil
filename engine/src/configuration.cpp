@@ -1,6 +1,7 @@
 #include <fstream>
 #include <sstream>
 
+#include <nyx/configuration_parser.hpp>
 #include <nyx/configuration.hpp>
 #include <nyx/constants.hpp>
 
@@ -45,7 +46,9 @@ namespace nyx
 
         content_ = buffer.str();
 
-        model_.configVersion = 1;
+        ConfigurationParser parser;
+
+        parser.load(root, model_);
 
         return true;
     }
