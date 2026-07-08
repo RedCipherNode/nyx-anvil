@@ -32,7 +32,15 @@ int main(int argc, char *argv[])
 
     if (command == "init")
     {
-        std::cout << "Not implemented.\n";
+        nyx::Engine engine;
+
+        if (!engine.createProject(fs::current_path()))
+        {
+            std::cerr << "Nyx project already exists.\n";
+            return 1;
+        }
+
+        std::cout << "Project initialized successfully.\n";
         return 0;
     }
 

@@ -9,4 +9,9 @@ namespace nyx
         return Project::exists(projectRoot);
     }
 
+    bool Engine::createProject(const std::filesystem::path &projectRoot)
+    {
+        return Project::create(projectRoot);
+    }
+
 }

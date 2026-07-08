@@ -9,6 +9,8 @@ namespace nyx
     {
     public:
         bool initialize(const std::filesystem::path &projectRoot);
+
+        bool createProject(const std::filesystem::path &projectRoot);
     };
 
 }
