@@ -6,7 +6,11 @@ int main()
 {
     nyx::Engine engine;
 
-    engine.initialize();
+    if (!engine.initialize())
+    {
+        std::cerr << "Failed to initialize engine.\n";
+        return 1;
+    }
 
     std::cout << "Nyx-Anvil\n";
 

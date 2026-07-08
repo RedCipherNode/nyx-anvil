@@ -6,7 +6,7 @@ namespace nyx
     class Engine
     {
     public:
-        void initialize();
+        bool initialize();
     };
 
 }

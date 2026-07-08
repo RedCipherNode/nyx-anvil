@@ -3,8 +3,9 @@
 namespace nyx
 {
 
-    void Engine::initialize()
+    bool Engine::initialize()
     {
+        return true;
     }
 
 }
