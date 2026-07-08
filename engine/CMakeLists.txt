@@ -3,6 +3,7 @@ add_library(nyx-engine STATIC)
 target_sources(nyx-engine
     PRIVATE
     src/engine.cpp
+    src/project.cpp
 )
 
 target_include_directories(nyx-engine

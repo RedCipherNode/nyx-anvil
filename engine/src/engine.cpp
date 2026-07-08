@@ -1,11 +1,12 @@
 #include <nyx/engine.hpp>
+#include <nyx/project.hpp>
 
 namespace nyx
 {
 
-    bool Engine::initialize()
+    bool Engine::initialize(const std::filesystem::path &projectRoot)
     {
-        return true;
+        return Project::exists(projectRoot);
     }
 
 }

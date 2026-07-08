@@ -1,12 +1,14 @@
 #pragma once
 
+#include <filesystem>
+
 namespace nyx
 {
 
     class Engine
     {
     public:
-        bool initialize();
+        bool initialize(const std::filesystem::path &projectRoot);
     };
 
 }
